@@ -1,3 +1,10 @@
+minikube start
+minikube config set vm-driver virtualbox
+kubectl config use-context minikube
+
+#check if comunication is fine
+kubectl cluster-info
+
 minikube ssh
 docker build --file=Dockerfile  --tag=app1:latest --rm=true .
 docker build --file=Dockerfile  --tag=app2:latest --rm=true .
