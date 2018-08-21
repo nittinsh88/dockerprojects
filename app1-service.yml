@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: app1
+  namespace: default
+spec:
+  selector:
+    app: app1
+  ports:
+  - protocol: TCP
+    port: 8080
+  type: ClusterIP
