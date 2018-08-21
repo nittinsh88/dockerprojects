@@ -10,8 +10,7 @@ spec:
       paths:
       - backend:
           serviceName: app1
-          servicePort: 80
-		  
+          servicePort: 80		  
   - host: www.app2.com
     http:
       paths:
