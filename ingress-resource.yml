@@ -1,20 +1,26 @@
-
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: my-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
+  backend:
+    serviceName: default-http-backend
+    servicePort: 80
   rules:
-  - host: www.app1.com
+  - host: app1.com
     http:
       paths:
-      - backend:
+      - path: /
+        backend:
           serviceName: app1
-          servicePort: 80		  
-  - host: www.app2.com
+          servicePort: 80
+  - host: app2.com
     http:
       paths:
-      - path:
+      - path: /
         backend:
           serviceName: app2
           servicePort: 80
+     

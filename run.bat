@@ -20,5 +20,8 @@ kubectl create -f C:\Users\nsha71\dockerprojects\app1-service.yml
 kubectl create -f C:\Users\nsha71\dockerprojects\app2-deployment.yml
 kubectl create -f C:\Users\nsha71\dockerprojects\app2-service.yml
 
+kubectl create -f C:\Users\nsha71\dockerprojects\docker-compose.yml
+
 
 kubectl create -f C:\Users\nsha71\dockerprojects\ingress-resource.yml
+kubectl create -f C:\Users\nsha71\dockerprojects\role.yml

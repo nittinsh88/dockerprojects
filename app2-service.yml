@@ -2,12 +2,11 @@ kind: Service
 apiVersion: v1
 metadata:
   name: app2
-  namespace: default
-spec:
+  spec:
   selector:
     app: app2
   ports:
   - protocol: TCP
-    port: 8081
+    port: 8082
   type: ClusterIP
   
